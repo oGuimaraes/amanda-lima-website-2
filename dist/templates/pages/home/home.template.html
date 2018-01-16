@@ -47,11 +47,16 @@
 			<h2 class="lst-title">TREINE COMIGO</h2>
 
 			<p>
-				Não existe prática sem teoria e vice versa, o que fazer muitos sabem, mas como fazer é o "Q" da questão. E é isso que eu faço, primeiro te mostro o porque fiz daquela maneira, como eu fiz, e o que fato eu fiz e te entrego um planejamento capaz de gerar os resultados que você deseja.
+				Não existe prática sem teoria e vice versa, o que fazer muitos sabem, mas como fazer é o ‘’Q’’ da questão.
+				E é isso que eu faço, primeiro te mostro o porque fiz daquela maneira, como eu fiz, o que fato eu fiz e te
+				entrego um planejamento capaz de gerar os resultados que você deseja.
 			</p>
 
 			<p>
-				Seu sucesso é o meu sucesso, eu amo o que eu faço e meu objetivo e ajudá-lo à chegar ao seu, diferente de todos os treinos que você já fez, vai desde a manipulação das variáveis da musculação até a utilização do tempo ao seu favor, são treinos econômicos, com 30, 35 minutos, inteligentes e capazes de gerar o resultado que você deseja. Eu quero você no meu time, se permita e vem fazer parte!
+				Seu sucesso é o meu sucesso, eu amo o que eu faço e meu objetivo e ajuda-lo à chegar ao seu, diferente de todos
+				os treinos que você já fez, vai desde a manipulação das variáveis da musculação até a utilização do tempo ao seu favor,
+				são treinos econômicos, com 30, 35 minutos, inteligentes e capazes de gerar o resultado que você deseja.
+				Eu quero você no meu time, se permita e vem fazer parte!
 			</p>
 			<br/>
 			<p>
@@ -78,7 +83,7 @@
 	</div>
 </section>
 
-<section id="consultoria" class="lst-consulting-section">
+<section id="consultoria" class="lst-consulting-section-web">
 	<div class="lst-content-container">
 		<div class="lst-large-column lst-left-column">
 			<div class="lst-content-box">
@@ -120,6 +125,53 @@
 					Recebimento do treino: após a análise do questionário, eu elaboro seu treino, o mesmo você recebe
 					uma cópia por e-mail e primeiras orientações pelo WhatsApp, e a partir daí nosso contato será frequente.
 				</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div class="lst-consulting-section-mobile">
+		<div class="lst-content-container">
+			<div class="lst-content-box">
+					<p class="lst-featured-text"> 3 PASSOS</p>
+					<p>PARA A</p>
+					<p>CONSULTORIA</p>
+			</div>
+			<div class="lst-info-box" id="lst-info-box">
+				<div class="lst-small-column" id="lst-small-column">
+					<div class="lst-orange-column" id="lst-orange-column">
+						<p class="lst-content-1">1</p>
+						<p class="lst-content-2">2</p>
+						<p class="lst-content-3">3</p>
+					</div>
+				</div>
+				<div class="lst-large-column">
+					<div class="lst-content">
+						<h3 class="lst-title">ESCOLHA SEU PLANO</h3>
+						<p>
+							Passo: Escolha do plano que melhor te atende, o plano Mensal você recebe 1 prescrição,
+							nos planos trimestral, semestral e fidelidade você recebe 1 prescrição à cada 30 dias.
+						</p>
+					</div>
+			
+					<div class="lst-content">
+						<h3 class="lst-title">PREENCHA O QUESTIONÁRIO</h3>
+						<p>
+							Preencha o Questionário: após você adquirir um dos planos você receberá por e-mail meu primeiro
+							contato com acesso ao questionário, que através dele eu conhecerei você, suas particularidades,
+							objetivos, etc... Só a partir dele consigo elaborar o melhor treinamento para você.
+						</p>
+					</div>
+			
+					<div class="lst-content">
+						<h3 class="lst-title">RECEBA SEU TREINO</h3>
+						<p>
+								Recebimento do treino: após a análise do questionário, eu elaboro seu treino, o mesmo você recebe
+							uma cópia por e-mail e primeiras orientações pelo WhatsApp, e a partir daí nosso contato será frequente.
+						</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -172,7 +224,7 @@
 	</div>
 </section>
 
-<section id="duvidas" class="lst-faq-section">
+<!--<section id="duvidas" class="lst-faq-section">
 	<div class="lst-content-container">
 		<h3 class="lst-title-white">DÚVIDAS FREQUENTES</h3>
 
@@ -226,7 +278,7 @@
 		</lst-accordion-item>
 
 	</div>
-</section>
+</section> -->
 
 <section class="lst-social-section" ng-controller="SocialController">
 	<div class="lst-content-container">
@@ -243,11 +295,11 @@
 
 		<div id="fale-conosco" class="lst-social-column lst-contact-us">
 			<h4 class="lst-title"><b><i>FALE CONOSCO</b></i></h4>
-			<input type="text" ng-model="name" class="lst-input-name" placeholder="SEU NOME"/>
-			<input type="email" ng-model="email" class="lst-input-email" placeholder="SEU E-MAIL"/>
-			<input type="text" ng-model="message" class="lst-input-msg" placeholder="SUA MENSAGEM..."/>
+			<input type="text" class="lst-input-name" placeholder="SEU NOME"/>
+			<input type="email" class="lst-input-email" placeholder="SEU E-MAIL"/>
+			<input type="text" class="lst-input-msg" placeholder="SUA MENSAGEM..."/>
 
-			<a class="lst-send" ng-class="{'-positive': mailSuccess}" ng-click="sendEmail()" ng-bind="sendText"></a>
+			<a ng-show="!alreadySent" class="lst-send" ng-class="{'-positive': mailSuccess}" ng-click="sendEmail()" ng-bind="sendText"></a>
 		</div>
 	</div>
 </section>

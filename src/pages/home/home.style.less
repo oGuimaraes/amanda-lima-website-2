@@ -250,14 +250,11 @@
 	}
 }
 
-.lst-consulting-section {
+.lst-consulting-section-web {
 	background: url(../images/step-by-step.png) no-repeat left center/cover;
 	color: #4A4F4F;
 
-	@media (max-width: 768px) {
-		display: none;
-	}
-
+	
 	.lst-content-container{
 		margin: 0 auto;
 		max-width: 980px;
@@ -304,6 +301,11 @@
 							#4a4f4f 1.41734px -1.41108px 0,
 							#4a4f4f 1.92034px -0.558831px 0;
 			}
+
+			@media (max-width: 769px){
+				padding-top: 50px;
+			
+			}
 		}
 
 		.lst-title {
@@ -342,12 +344,107 @@
 	}
 
 	@media (max-width: 768px) {
+		display: none;
 
 		#consultoria {
 			display: none;
 		}
 	}
 
+}
+
+.lst-consulting-section-mobile {
+	@media (min-width: 769px) {
+		display: none;
+	}
+	
+	background-color: #d1d2d4;
+
+	.lst-content-box {
+		color: #4A4F4F;
+		font-size: 36px;
+		font-weight: 800;
+		line-height: 34px;
+		-ms-transform: rotate(-5deg);
+		-webkit-transform: rotate(-5deg);
+		padding: 50px 20px 30px;
+		transform: rotate(-5deg);
+		text-align: center;
+
+		.lst-featured-text {
+			color: #FFCC00;
+			font-size: 52px;
+			text-shadow:#4a4f4f -6px 2px 0,
+						#4a4f4f 1.75517px 0.958851px 0,
+						#4a4f4f 1.0806px 1.68294px 0,
+						#4a4f4f 0.141474px 1.99499px 0,
+						#4a4f4f -0.832294px 1.81859px 0,
+						#4a4f4f -1.60229px 1.19694px 0,
+						#4a4f4f -1.97998px 0.28224px 0,
+						#4a4f4f -1.87291px -0.701566px 0,
+						#4a4f4f -1.30729px -1.5136px 0,
+						#4a4f4f -0.421592px -1.95506px 0,
+						#4a4f4f 0.567324px -1.91785px 0,
+						#4a4f4f 1.41734px -1.41108px 0,
+						#4a4f4f 1.92034px -0.558831px 0;
+		}
+	}
+
+	.lst-info-box {
+		display: table;
+
+		.lst-small-column {
+			float: left;
+
+			
+			.lst-orange-column {
+				margin-left: 20px;
+				margin-right: 20px;
+				width: 50px;
+				padding-bottom: 10%;
+
+				background-color: #FFCC00;
+				color: #4A4F4F;
+				display: inline-block;
+				font-size: 40px;
+				font-style: italic;
+				font-weight: 800;
+				text-align: center;
+				vertical-align: top;
+
+			}
+
+			.lst-content-1 {
+				margin: 50px 10px 0 0;
+			}
+			.lst-content-2 {
+				padding: 110px 10px 0 0;
+			}
+			.lst-content-3 {
+				padding: 110px 10px 0 0;
+			}
+		}
+
+		.lst-large-column {
+			margin-left: 10%;
+			padding-right: 25px;
+
+			h3{
+				color: #484e4e;
+				font-size: 20px;
+				font-weight: bold;
+				font-style: italic;
+
+			}
+
+			p{
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 20px;
+				margin-bottom: 40px;
+			}
+		}
+	}
 }
 
 .lst-contact-section {

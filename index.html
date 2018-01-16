@@ -14,5 +14,11 @@
 	<script src="dist/js/vendor.js"></script>
 	<script src="dist/js/app.js"></script>
 	<script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/api/v2/checkout/pagseguro.lightbox.js"></script>
+	<script type="text/javascript">
+		function mudaAltura(height) {
+			var alturaPai = document.getElementById("lst-info-box").offsetHeight;
+        	document.getElementById("lst-small-column").style.height = alturaPai + "px";
+		}
+	  </script>
 </body>
 </html>
