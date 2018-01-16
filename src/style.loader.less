@@ -1,0 +1,35 @@
+/*
+ * Paths
+ */
+ @bootstrap_path: "../bower_components/bootstrap/less";
+ @project_path: "globals/less";
+ 
+/*
+ * Variables
+ */
+ @import "@{bootstrap_path}/variables.less";
+ 
+/*
+ * Mixins
+ */
+ @import "@{bootstrap_path}/mixins.less";
+ 
+/*
+ * Core 
+ */
+ @import "@{bootstrap_path}/scaffolding.less";
+
+/*
+ * Project Files
+ */
+@import "less/general.less";
+@import "less/mixins.less";
+
+@import "components/content-section/content-section.style.less";
+@import "components/top-menu/top-menu.style.less";
+@import "components/content-container/content-container.style.less";
+@import "components/price-box/price-box.style.less";
+@import "components/accordion-item/accordion-item.style.less";
+@import "components/menu-button/menu-button.style.less";
+
+@import "pages/home/home.style.less";

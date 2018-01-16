@@ -1,0 +1,29 @@
+{
+  "name": "amanda-lima-website",
+  "description": "Website criado para o Amanda Lima, personal trainer em Belo Horizonte.",
+  "main": "index.js",
+  "authors": [
+    "Otávio Guimarães <otaviovgsr@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Lustrel/amanda-lima-website",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.2",
+    "reset-css": "^2.2.0",
+    "components-font-awesome": "^4.7.0",
+    "angular-route": "^1.6.2",
+    "jquery": "^3.1.1",
+    "bootstrap": "^3.3.7",
+    "instafeed.js": "^1.4.1",
+    "angular-modal-service": "^0.12.1",
+    "angular-carousel": "^1.1.0"
+  }
+}

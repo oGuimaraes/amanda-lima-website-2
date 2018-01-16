@@ -1,0 +1,33 @@
+<div class="modal fade lst-contact-section" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">Entre em contato conosco</h4>
+			</div>
+			<div class="modal-body">
+				<div ng-show="mailSent">
+					Seu e-mail foi enviado com sucesso! Responderemos em breve. :)
+				</div>
+				<form ng-show="!mailSent">
+					<div class="form-group">
+						<label for="name">Nome:</label>
+						<input name="name" ng-model="name" type="text" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="email">E-mail:</label>
+						<input name="email" ng-model="email" type="email" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="message">Mensagem:</label>
+						<textarea name="message" ng-model="message" rows="5" class="form-control"></textarea>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="form-control btn btn-success" ng-show="!mailSent" ng-click="sendEmail()">Enviar</button>
+				<button type="button" class="form-control btn btn-primary" ng-show="mailSent" data-dismiss="modal">Fechar</button>
+			</div>
+		</div>
+	</div>
+</div>

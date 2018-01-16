@@ -1,0 +1,28 @@
+{
+  "name": "pedro-cellis-website",
+  "version": "1.0.0",
+  "description": "Website criado para o Pedro Cellis, personal trainer em Belo Horizonte.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lustrel/pedro-cellis-website.git"
+  },
+  "author": "Stanley Sathler <stanley@lustrel.com.br>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Lustrel/pedro-cellis-website/issues"
+  },
+  "homepage": "https://github.com/Lustrel/pedro-cellis-website#readme",
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-concat-css": "^0.3.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-less": "^1.4.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "http-server": "^0.10.0"
+  }
+}

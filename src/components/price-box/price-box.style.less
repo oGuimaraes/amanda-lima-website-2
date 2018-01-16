@@ -1,0 +1,95 @@
+.lst-price-box {
+	background: white;
+	border: 1px solid #DF8C1C;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 30px;
+	padding: 20px;
+	vertical-align: middle;
+	width: 85%;
+	position: relative;
+	justify-content: center;
+
+	@media (min-width: 769px) {
+		margin: 10px;
+		width: 46%;
+	}
+
+	@media (min-width: 1200px) {
+		width: 22%;
+	}
+
+	.lst-title {
+		width: 100%;
+	}
+
+	&.-featured {
+		width: 100%;
+
+		@media (min-width: 769px) {
+			width: 46%;
+		}
+
+		@media (min-width: 1200px) {
+			width: 22%;
+			margin-top: -10px;
+			margin-bottom: -10px;
+		}
+
+		.lst-title {
+			font-size: 36px;
+		}
+
+		.lst-buy {
+			background-color: #FFB600;
+			border-color: #FFB600;
+			font-size: 30px;
+		}
+	}
+
+	form {
+		align-self: flex-end;
+		width: 100%;
+	}
+
+	.lst-title,
+	.lst-price,
+	.lst-description {
+		margin-bottom: 20px !important;
+	}
+
+	.lst-title {
+		font-size: 24px;
+		line-height: 1.2;
+	}
+
+	.lst-price {
+		color: #ffb600;
+		display: inline-block;
+		font-size: 40px;
+		font-weight: 700;
+		margin-bottom: 10px;
+		line-height: 1.2;
+	}
+
+	.lst-description {
+		color: #C1C2C2;
+		font-size: 12px;
+		min-height: 140px;
+	}
+
+	.lst-buy {
+		background-color: #ffffff;
+		border-color:  #ffE4A3;
+		border-style: solid;
+		color: #525253;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 28px;
+		font-weight: 700;
+		text-align: center;
+		text-decoration: none;
+		padding: 15px 0;
+		width: 100%;
+	}
+}

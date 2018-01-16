@@ -1,0 +1,14 @@
+<div class="lst-responsive-menu">
+	<ul class="lst-items">
+		<li ng-repeat="link in links">
+			<a href="{{ link.url }}">{{ link.text }}</a>
+		</li>
+	</ul>
+
+	<!-- Shown only in smaller devices -->
+	<div class="lst-button" ng-click="openMenu()">
+		<div class="lst-bar"></div>
+		<div class="lst-bar"></div>
+		<div class="lst-bar"></div>
+	</div>
+</div>
